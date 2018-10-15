@@ -11,18 +11,20 @@ import SnareSound from "./sounds/snare.wav"
 import TinkSound from "./sounds/tink.wav"
 import TomSound from "./sounds/tom.wav"
 
+import "./App.css"
+
 class App extends Component {
   state = {
     drumKeys: [
-      { keyLabel: "a", soundEffect: BoomSound, isPlaying: false },
-      { keyLabel: "s", soundEffect: ClapSound, isPlaying: false },
-      { keyLabel: "d", soundEffect: HihatSound, isPlaying: false },
-      { keyLabel: "f", soundEffect: KickSound, isPlaying: false },
-      { keyLabel: "g", soundEffect: OpenhatSound, isPlaying: false },
-      { keyLabel: "h", soundEffect: RideSound, isPlaying: false },
-      { keyLabel: "j", soundEffect: SnareSound, isPlaying: false },
-      { keyLabel: "k", soundEffect: TinkSound, isPlaying: false },
-      { keyLabel: "l", soundEffect: TomSound, isPlaying: false }
+      { keyLabel: "a", effectName: "Boom", soundEffect: BoomSound, isPlaying: false },
+      { keyLabel: "s", effectName: "Clap", soundEffect: ClapSound, isPlaying: false },
+      { keyLabel: "d", effectName: "Hihat", soundEffect: HihatSound, isPlaying: false },
+      { keyLabel: "f", effectName: "Kick", soundEffect: KickSound, isPlaying: false },
+      { keyLabel: "g", effectName: "Openhat", soundEffect: OpenhatSound, isPlaying: false },
+      { keyLabel: "h", effectName: "Ride", soundEffect: RideSound, isPlaying: false },
+      { keyLabel: "j", effectName: "Snare", soundEffect: SnareSound, isPlaying: false },
+      { keyLabel: "k", effectName: "Tink", soundEffect: TinkSound, isPlaying: false },
+      { keyLabel: "l", effectName: "Tom", soundEffect: TomSound, isPlaying: false }
     ]
   }
 
@@ -39,9 +41,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="drumKeys">
         {this.state.drumKeys.map((key, i) => {
-          return (<DrumKey key={i} soundEffect={key.soundEffect} isPlaying={key.isPlaying} keyLabel={key.keyLabel}/>)
+          return (
+            <DrumKey
+              key={i}
+              soundEffect={key.soundEffect}
+              effectName={key.effectName}
+              isPlaying={key.isPlaying}
+              keyLabel={key.keyLabel}/>
+          )
         })}
       </div>
     );
