@@ -1,0 +1,4 @@
+[build]
+  base    = "02-clock"
+  publish = "02-clock/build"
+  command = "yarn build"
