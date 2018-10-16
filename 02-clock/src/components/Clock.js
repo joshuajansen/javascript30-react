@@ -7,9 +7,9 @@ class Clock extends Component {
     return (
       <div className="clock">
         <div className="clock-face">
-          <Hand key="hour" handType="hour" />
-          <Hand key="minute" handType="minute" />
-          <Hand key="second" handType="second" />
+          <Hand handType="hour" />
+          <Hand handType="minute" />
+          <Hand handType="second" />
         </div>
       </div>
     );
