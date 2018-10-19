@@ -1,4 +1,4 @@
 [build]
-  base    = "05-flex-panel"
-  publish = "05-flex-panel/build"
+  base    = "05-flex-panels"
+  publish = "05-flex-panels/build"
   command = "yarn build"
