@@ -1,4 +1,4 @@
 [build]
-  base    = "03-cssvars"
-  publish = "03-cssvars/build"
+  base    = "05-flex-panel"
+  publish = "05-flex-panel/build"
   command = "yarn build"
