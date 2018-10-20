@@ -1,4 +1,4 @@
 [build]
-  base    = "05-flex-panels"
-  publish = "05-flex-panels/build"
+  base    = "06-city-search"
+  publish = "06-city-search/build"
   command = "yarn build"
