@@ -18,9 +18,11 @@ class App extends Component {
   }
 
   search() {
+    const searchQuery = this.searchField.current.value
+
     this.setState({
-      searchResults: this.state.cities.filter(place => {
-        const regex = new RegExp(this.searchField.current.value, 'gi');
+      searchResults: searchQuery.length < 3 ? [] : this.state.cities.filter(place => {
+        const regex = new RegExp(searchQuery, 'gi');
         return place.city.match(regex) || place.state.match(regex)
       })
     })
@@ -31,13 +33,17 @@ class App extends Component {
       <form className="search-form">
         <input className="search" ref={this.searchField} onChange={this.search.bind(this)}></input>
         <ul className="suggestions">
-          {this.state.searchResults.map((city, i) => {
+          {
+            this.state.searchResults.length === 0 ?
+            <React.Fragment><li>Filter for a city</li><li>or a state</li></React.Fragment> :
+            this.state.searchResults.map((city, i) => {
             return <City key={i}
               searchQuery={this.searchField.current.value}
               cityName={city.city}
               stateName={city.state}
               population={city.population}></City>
-          })}
+            })
+          }
         </ul>
       </form>
     );
