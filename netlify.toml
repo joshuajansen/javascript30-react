@@ -1,4 +1,4 @@
 [build]
-  base    = "06-city-search"
-  publish = "06-city-search/build"
+  base    = "08-canvas"
+  publish = "08-canvas/build"
   command = "yarn build"
