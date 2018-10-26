@@ -1,4 +1,4 @@
 [build]
-  base    = "08-canvas"
-  publish = "08-canvas/build"
+  base    = "10-checkboxes"
+  publish = "10-checkboxes/build"
   command = "yarn build"
