@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 let lastChecked;
+let shiftKeyDown;
 
 class App extends Component {
   state = {
@@ -25,7 +26,7 @@ class App extends Component {
       checkboxes: this.state.checkboxes.map((checkbox) => {
         if (checkbox === clickedCheckbox) checkbox.isChecked = e.target.checked;
 
-        if (e.shiftKey && e.target.checked) {
+        if (shiftKeyDown && e.target.checked) {
           if (checkbox === clickedCheckbox || checkbox === lastChecked) inBetween = !inBetween;
           if (inBetween) checkbox.isChecked = true;
         }
@@ -37,8 +38,15 @@ class App extends Component {
     lastChecked = clickedCheckbox;
   }
 
-  doNothing() {
-    return
+  componentDidMount() {
+    document.addEventListener("keydown", (event) => {
+      if(event.which !== 16) return
+      shiftKeyDown = true
+    })
+    document.addEventListener("keyup", (event) => {
+      if(event.which !== 16) return
+      shiftKeyDown = false
+    })
   }
 
   render() {
@@ -49,8 +57,7 @@ class App extends Component {
             <div key={i} className="item">
               <input type="checkbox"
                 id={i}
-                onChange={ this.doNothing }
-                onClick={ (e) => this.handleChecked(e, checkbox) }
+                onChange={ (e) => this.handleChecked(e, checkbox) }
                 checked={ checkbox.isChecked } />
               <label htmlFor={i}>{ checkbox.label }</label>
             </div>
