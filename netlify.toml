@@ -1,4 +1,4 @@
 [build]
-  base    = "10-checkboxes"
-  publish = "10-checkboxes/build"
+  base    = "11-video-player"
+  publish = "11-video-player/build"
   command = "yarn build"
