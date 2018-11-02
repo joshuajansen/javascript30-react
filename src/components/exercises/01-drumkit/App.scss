@@ -1,0 +1,19 @@
+.Drumkit {
+  font-size: 10px;
+  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background-size: cover;
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .drumKeys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
