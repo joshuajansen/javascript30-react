@@ -1,4 +1,0 @@
-[build]
-  base    = "15-checkboxes"
-  publish = "15-checkboxes/build"
-  command = "yarn build"
