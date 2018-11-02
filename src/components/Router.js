@@ -15,6 +15,7 @@ import SlideOnScroll from "./exercises/13-slide-on-scroll/App"
 import LocalStorage from "./exercises/15-localstorage/App"
 import TextShadow from "./exercises/16-text-shadow/App"
 import PhotoBooth from "./exercises/19-photo-booth/App"
+import SpeechRecognition from "./exercises/20-speech-recognition/App"
 
 const Router = () =>(
   <BrowserRouter>
@@ -33,6 +34,7 @@ const Router = () =>(
       <Route exact path="/LocalStorage" component={LocalStorage} />
       <Route exact path="/TextShadow" component={TextShadow} />
       <Route exact path="/PhotoBooth" component={PhotoBooth} />
+      <Route exact path="/SpeechRecognition" component={SpeechRecognition} />
     </Switch>
   </BrowserRouter>
 )

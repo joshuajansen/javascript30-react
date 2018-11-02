@@ -23,6 +23,7 @@ class App extends Component {
           <li><Link to="/LocalStorage">LocalStorage</Link></li>
           <li><Link to="/TextShadow">TextShadow</Link></li>
           <li><Link to="/PhotoBooth">PhotoBooth</Link></li>
+          <li><Link to="/SpeechRecognition">SpeechRecognition</Link></li>
         </ul>
       </div>
     );
