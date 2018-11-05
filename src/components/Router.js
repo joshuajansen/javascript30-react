@@ -17,6 +17,7 @@ import TextShadow from "./exercises/16-text-shadow/App"
 import PhotoBooth from "./exercises/19-photo-booth/App"
 import SpeechRecognition from "./exercises/20-speech-recognition/App"
 import GeoLocation from "./exercises/21-geo-location/App"
+import FollowLinks from "./exercises/22-follow-links/App"
 
 const Router = () =>(
   <BrowserRouter>
@@ -37,6 +38,7 @@ const Router = () =>(
       <Route exact path="/PhotoBooth" component={PhotoBooth} />
       <Route exact path="/SpeechRecognition" component={SpeechRecognition} />
       <Route exact path="/GeoLocation" component={GeoLocation} />
+      <Route exact path="/FollowLinks" component={FollowLinks} />
     </Switch>
   </BrowserRouter>
 )

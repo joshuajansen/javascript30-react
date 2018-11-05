@@ -25,6 +25,7 @@ class App extends Component {
           <li><Link to="/PhotoBooth">PhotoBooth</Link></li>
           <li><Link to="/SpeechRecognition">SpeechRecognition</Link></li>
           <li><Link to="/GeoLocation">GeoLocation</Link></li>
+          <li><Link to="/FollowLinks">FollowLinks</Link></li>
         </ul>
       </div>
     );
