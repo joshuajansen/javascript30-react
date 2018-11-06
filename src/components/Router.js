@@ -19,6 +19,7 @@ import SpeechRecognition from "./exercises/20-speech-recognition/App"
 import GeoLocation from "./exercises/21-geo-location/App"
 import FollowLinks from "./exercises/22-follow-links/App"
 import TextToSpeech from "./exercises/23-text-to-speech/App"
+import StickyNav from "./exercises/24-sticky-nav/App"
 
 const Router = () =>(
   <BrowserRouter>
@@ -41,6 +42,7 @@ const Router = () =>(
       <Route exact path="/GeoLocation" component={GeoLocation} />
       <Route exact path="/FollowLinks" component={FollowLinks} />
       <Route exact path="/TextToSpeech" component={TextToSpeech} />
+      <Route exact path="/StickyNav" component={StickyNav} />
     </Switch>
   </BrowserRouter>
 )
