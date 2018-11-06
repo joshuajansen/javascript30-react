@@ -26,6 +26,7 @@ class App extends Component {
           <li><Link to="/SpeechRecognition">SpeechRecognition</Link></li>
           <li><Link to="/GeoLocation">GeoLocation</Link></li>
           <li><Link to="/FollowLinks">FollowLinks</Link></li>
+          <li><Link to="/TextToSpeech">TextToSpeech</Link></li>
         </ul>
       </div>
     );
