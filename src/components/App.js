@@ -28,6 +28,7 @@ class App extends Component {
           <li><Link to="/FollowLinks">FollowLinks</Link></li>
           <li><Link to="/TextToSpeech">TextToSpeech</Link></li>
           <li><Link to="/StickyNav">StickyNav</Link></li>
+          <li><Link to="/StripeNav">StripeNav</Link></li>
         </ul>
       </div>
     );

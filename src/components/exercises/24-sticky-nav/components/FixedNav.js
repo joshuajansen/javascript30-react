@@ -81,12 +81,12 @@ export default class FixedNav extends Component {
     return (
       <Nav ref={ this.navbar }>
         <ul>
-          <li className="logo"><a href="#">LOST.</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Maps</a></li>
+          <li className="logo"><a href="#foo">LOST.</a></li>
+          <li><a href="#foo">Home</a></li>
+          <li><a href="#foo">About</a></li>
+          <li><a href="#foo">Images</a></li>
+          <li><a href="#foo">Locations</a></li>
+          <li><a href="#foo">Maps</a></li>
         </ul>
       </Nav>
     )
