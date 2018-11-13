@@ -22,6 +22,7 @@ import TextToSpeech from "./exercises/23-text-to-speech/App"
 import StickyNav from "./exercises/24-sticky-nav/App"
 import StripeNav from "./exercises/26-stripe-nav/App"
 import ClickAndDrag from "./exercises/27-click-and-drag/App"
+import VideoSpeed from "./exercises/28-video-speed/App"
 
 const Router = () =>(
   <BrowserRouter>
@@ -47,6 +48,7 @@ const Router = () =>(
       <Route exact path="/StickyNav" component={StickyNav} />
       <Route exact path="/StripeNav" component={StripeNav} />
       <Route exact path="/ClickAndDrag" component={ClickAndDrag} />
+      <Route exact path="/VideoSpeed" component={VideoSpeed} />
     </Switch>
   </BrowserRouter>
 )
