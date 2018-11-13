@@ -31,6 +31,7 @@ class App extends Component {
           <li><Link to="/StripeNav">StripeNav</Link></li>
           <li><Link to="/ClickAndDrag">ClickAndDrag</Link></li>
           <li><Link to="/VideoSpeed">VideoSpeed</Link></li>
+          <li><Link to="/Timer">Timer</Link></li>
         </ul>
       </div>
     );
