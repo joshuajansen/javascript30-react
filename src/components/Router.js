@@ -24,6 +24,7 @@ import StripeNav from "./exercises/26-stripe-nav/App"
 import ClickAndDrag from "./exercises/27-click-and-drag/App"
 import VideoSpeed from "./exercises/28-video-speed/App"
 import Timer from "./exercises/29-timer/App"
+import WackAMole from "./exercises/30-wack-a-mole/App"
 
 const Router = () =>(
   <BrowserRouter>
@@ -51,6 +52,7 @@ const Router = () =>(
       <Route exact path="/ClickAndDrag" component={ClickAndDrag} />
       <Route exact path="/VideoSpeed" component={VideoSpeed} />
       <Route exact path="/Timer" component={Timer} />
+      <Route exact path="/WackAMole" component={WackAMole} />
     </Switch>
   </BrowserRouter>
 )
